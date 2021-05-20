@@ -30,7 +30,7 @@ app.get("/ask", (req, res) => {
 	});
 });
 
-app.listen(PORT, async (err) => {
+app.listen(process.env.PORT || PORT, async (err) => {
 	console.info("============================");
 	console.info(err || `Server is listening at http://localhost:${PORT}`);
 	console.info("============================");
