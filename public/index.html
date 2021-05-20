@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QnA NLP</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body onload="main()">
+    <div class="questionDiv">
+        <p class="title">Question</p>
+        <input type="text" name="question" id="question" class="question" placeholder="Type your question here"
+            autocapitalize="off" autocomplete="off">
+        <button class="askBtn" id="askBtn">Ask</button>
+    </div>
+    <br />
+    <br />
+    <div class="answerDiv" id="answerDiv">
+        <p class="title">Answer</p>
+        <p class="answer" id="answer">The MobileBERT Q&A model can be used to build a system that can answer users’
+            questions in
+            natural language. It was created using a pre-trained BERT model fine-tuned on SQuAD 1.1 (Stanford Question
+            Answering Dataset).</p>
+    </div>
+    <p class="error" id="error"></p>
+    <p class="wait" id="wait">Processing...</p>
+</body>
+
+</html>
