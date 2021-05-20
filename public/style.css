@@ -60,6 +60,9 @@ body {
 
 .answer {
 	width: 600px;
+}
+
+.answer::first-letter {
 	text-transform: capitalize;
 }
 

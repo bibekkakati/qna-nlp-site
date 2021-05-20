@@ -1,4 +1,5 @@
 require("@tensorflow/tfjs");
+const tf = require("@tensorflow/tfjs-node");
 const qna = require("@tensorflow-models/qna");
 
 const getModel = async () => {

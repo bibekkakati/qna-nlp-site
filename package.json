@@ -12,6 +12,7 @@
 		"@tensorflow-models/qna": "^1.0.0",
 		"@tensorflow/tfjs": "^3.6.0",
 		"@tensorflow/tfjs-converter": "^3.6.0",
+		"@tensorflow/tfjs-node": "^3.6.1",
 		"cheerio": "^1.0.0-rc.9",
 		"cors": "^2.8.5",
 		"express": "^4.17.1"

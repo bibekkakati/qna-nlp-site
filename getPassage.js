@@ -1,5 +1,4 @@
 const { default: Cheerio } = require("cheerio");
-const e = require("cors");
 const getPage = require("./getPage");
 const getSanitizedQuery = require("./getSanitizedQuery");
 
@@ -28,7 +27,7 @@ const getPassage = async (question) => {
 						if (pages[i]) {
 							try {
 								const $ = Cheerio.load(pages[i]);
-								const pLimit = 4;
+								const pLimit = 7;
 								const paras =
 									$(".mw-parser-output").children("p");
 								for (let i = 0; i < pLimit; i++) {
@@ -52,5 +51,3 @@ const getPassage = async (question) => {
 };
 
 module.exports = getPassage;
-
-// TODO: Check all result for keyword matching to question then load two pages of them and get the content

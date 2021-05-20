@@ -25,7 +25,7 @@ function main() {
 		if (text) {
 			wait.style.display = "block";
 			// Ask backend
-			fetch(`${url}/ask?question=${text}`)
+			fetch(`${url}ask?question=${text}`)
 				.then((response) => response.json())
 				.then((data) => {
 					if (data.success) {
