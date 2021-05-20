@@ -5,6 +5,7 @@ function main() {
 	const answer = document.getElementById("answer");
 	const error = document.getElementById("error");
 	const wait = document.getElementById("wait");
+	const url = window.location.href;
 
 	askBtn.onclick = function (e) {
 		reset();
@@ -24,7 +25,7 @@ function main() {
 		if (text) {
 			wait.style.display = "block";
 			// Ask backend
-			fetch(`http://localhost:3000/ask?question=${text}`)
+			fetch(`${url}/ask?question=${text}`)
 				.then((response) => response.json())
 				.then((data) => {
 					if (data.success) {
