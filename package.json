@@ -3,6 +3,16 @@
 	"version": "1.0.0",
 	"description": "Question answering site using Tensorflow.js",
 	"main": "server.js",
+	"bin": "server.js",
+	"pkg": {
+		"assets": [
+			"node_modules/**/*",
+			"public/**/*"
+		],
+		"targets": [
+			"node10-win-x64"
+		]
+	},
 	"scripts": {
 		"start": "node server.js"
 	},

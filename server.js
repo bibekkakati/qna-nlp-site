@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const getAnswer = require("./getAnswer");
 const getModel = require("./getModel");
 
@@ -11,7 +12,7 @@ var model;
 // Allow all site's request
 app.use(cors());
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "./public")));
 
 app.get("/ask", (req, res) => {
 	if (!model) {
