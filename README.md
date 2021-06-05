@@ -6,3 +6,9 @@
 -   Check the terminal for the message `Model is ready` i.e, model is ready to answer your questions.
 -   Open your browser and go to `localhost:3000`.
 -   Type your question and click `Ask` button.
+
+`To use tensorflowjs-node, you need python2.7 and node-gyp`
+
+### Work Flow
+
+<img align="center" src="./workflow/flow.png" alt="Flow Diagram">
